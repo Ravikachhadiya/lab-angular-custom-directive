@@ -1,0 +1,12 @@
+<div class="body">
+  <div class="container">
+    <h1>Custom Directive</h1>
+    <div>
+      <input type="radio" name="colors" (click)="color='blue'">blue
+      <input type="radio" name="colors" (click)="color='orange'">Orange
+      <input type="radio" name="colors" (click)="color='red'">red
+    </div>
+
+    <p [appHighlight]="color">{{message}}</p>
+  </div>
+</div>
